@@ -1,0 +1,175 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 157px;
+    height: 100vh;
+    background-color: #040404;
+    padding-left: 38px;
+    padding-top: 60px;
+    padding-bottom: 65px;
+    z-index: 1000;
+    transition: width 0.5s, background 0.5s;
+}
+
+.nav_item {
+    display: flex;
+    /* align-self: start; */
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #040404; */
+
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    align-self: self-start;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 157px;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: width 0.5s, background 0.5s;
+    padding: 60px 0 65px 0;
+    background-color: #040404;
+
+
+}
+
+.open {
+    width: 100vw;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%);
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* padding: 20px 0; */
+    margin-left: 30px;
+    /* margin-top: 200px; */
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.menu-icon {
+    /* padding: 10px; */
+    cursor: pointer;
+}
+
+
+
+.profile_info {
+    display: flex;
+    /* margin-left: 38px; */
+    flex-direction: row;
+    gap: 20px;
+    /* margin-bottom: 58px; */
+    /* margin-top: 60px; */
+
+
+}
+
+.profile_icon {
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 82px;
+    height: 82px;
+    background-color: #3b486d;
+    border-radius: 45px;
+}
+
+.profile_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Tajawal";
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 30px;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+
+
+.additional_menu_items_link {
+    letter-spacing: 4.8px;
+    color: #858688;
+    text-transform: uppercase;
+    opacity: 1;
+    font: normal normal bold 24px/42px Tajawal;
+    cursor: pointer;
+
+}
+
+.menu_item {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 82px;
+    height: 82px;
+    gap: 50px;
+    border-radius: 41px;
+    cursor: pointer;
+
+}
+
+.selected {
+    background-color: #3b486d;
+}
+
+.menu_item_open {
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: center;
+    width: 312px;
+    height: 72px;
+    gap: 50px;
+    border-radius: 12px;
+    margin-left: 60px;
+    font-family: "Tajawal";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    flex-wrap: nowrap;
+    margin: 5px 0;
+    padding-left: 24px;
+    color: #fff;
+
+}
+
+.selected {
+    background-color: #3b486d;
+}
+
+.menu-item.open {
+    display: flex;
+    background-color: #3b486d;
+    color: #fff;
+    border-radius: 12px;
+    width: 312px;
+    height: 72px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
