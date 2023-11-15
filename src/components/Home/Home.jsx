@@ -1,5 +1,5 @@
 import Trending from '../Trending/Trending';
-import Featur from '../Featured/Featur';
+import FeaturedView from '../Featured/FeaturedView';
 import styles from './home.module.css';
 import data from '../../data.json';
 import { useState } from 'react';
@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <div className={styles.container}>
-      <Featur data={Featured} selectedItem={selectedItem} />
+      <FeaturedView data={Featured} selectedItem={selectedItem} />
       <Trending data={TendingNow} onImageClick={handleImageClick} />
     </div>
   )
